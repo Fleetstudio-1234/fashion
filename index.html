@@ -9,6 +9,13 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="css/styles.css">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('token');
+            if(!myParam || myParam !== "12345") {
+                window.location.href="/accessdenied";
+            }
+        </script>
 
         <title>Fashion store Website</title>
     </head>
