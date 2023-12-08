@@ -14,7 +14,7 @@
             const myParam = urlParams.get('token');
             console.log("myParam", myParam);
             if(!myParam || myParam !== "12345") {
-                window.location.href="/fashion/accessdenied";
+                window.location.href= window.location.hostname + "/fashion/accessdenied";
             }
         </script>
 
